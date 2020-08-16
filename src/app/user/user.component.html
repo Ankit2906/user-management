@@ -1,0 +1,16 @@
+<div class="card card-container">
+    <div class="card-body">
+        <table>
+            <tr>
+                <th>Account Id</th>
+                <th>Full Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>{{ user.accountId | titlecase}}</td>
+                <td>{{ user.firstName | titlecase }} {{ user.lastName | titlecase }} </td>
+                <td>{{ user.age }}</td>
+            </tr>
+        </table>
+    </div>
+</div>

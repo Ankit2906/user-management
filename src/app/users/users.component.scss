@@ -1,0 +1,24 @@
+.users-container {
+  padding: 25px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .btn-grp {
+      display: flex;
+      button {
+        margin: 5px 10px;
+      }
+    }
+  }
+  .users {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 500px) {
+  .users-container {
+    padding: 15px;
+  }
+}

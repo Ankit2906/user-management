@@ -1,0 +1,10 @@
+<div class="users-container">
+    <div class="header">
+        <h2>Users List</h2>
+        <button class="btn btn-primary filter" (click)="filterUserList()">Filter</button>
+    </div>
+    <div class="users">
+        <app-user *ngFor="let user of users" [user]="user"></app-user>
+        <div id="loader" *ngIf="loading"></div>
+    </div>
+</div>
